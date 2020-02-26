@@ -1,7 +1,13 @@
+*{
+  scroll-behavior: smooth;
+}
+
+
 body {
   background-image: url(baggrund.png);
   color: #eca63f;
   border: none;
+
 }
 
 @media only screen and (max-width: 720px) {
@@ -58,5 +64,36 @@ video {
 .logo {
   height: 10%;
   position: fixed;
+  top: 30vh;
+  padding-left: 3em;
 }
+.sidenav {
+  position: fixed;
+  z-index: 1;
+  top: 40vh;
+  overflow-x: hidden;
+  padding-left: 3em;
+}
+
+.sidenav a {
+  font-family: 'Open Sans';
+  text-decoration: none;
+  font-size: 2vh;
+  color: white;
+  display: block;
+  padding: 10px 20px 10px 0px;
+  opacity: 0.1;
+}
+.sidenav a:hover {
+  color: #064579;
+  transition: 0.3s;
+}
+
+.scrolled a{
+  transition: 0.5s;
+  opacity: 1;
+}
+
+.fb-page{
+  grid-column: 6/8
 }
