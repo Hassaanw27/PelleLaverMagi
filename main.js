@@ -20,11 +20,11 @@ $(document).ready(function() {
   });
 });
 $(document).ready(function() {
-  console.log("sutrøv")
   $(window).bind('scroll', function() {
     var distance = 500;
     if ($(window).scrollTop() > distance) {
       $('logo').addClass('scrolled');
+      console.log("sutrøv")
     } else {
       $('logo').removeClass('scrolled');
     }
