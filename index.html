@@ -7,25 +7,26 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="robots" content="noindex, nofollow">
   <link rel="stylesheet" href="main.css" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap" rel="stylesheet">
   <script type="text/javascript" src="java.js"></script>
   <title>PELLE</title>
 </head>
 
 <body>
+
   <div id="fb-root"></div>
   <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v6.0"></script>
-  <section>
-    <img src="pelle.png" alt="PellesLogo" class="logo">
+  <section class="bordertest">
     <nav class="sidenav">
-      <a href="#Video">01 Video</a>
-      <a href="#SoMe">02 SoMe</a>
-      <a href="#ommig">03 Hvem er Pelle?</a>
-      <a href="#kontakt">04 Kontakt</a>
+      <img src="pelle.png" alt="PellesLogo" class="logo" id="logo">
+
+      <a href="#Video">Video</a>
+      <a href="#SoMe">SoMe</a>
+      <a href="#ommig">Pelle</a>
+      <a href="#kontakt">Kontakt</a>
     </nav>
   </section>
   <div id="wrapper">
-
     <video id="Video" controls>
       <source src="grp3.mp4" type="video/mp4">
       Your browser does not support HTML5 video.
@@ -35,6 +36,35 @@
     </div>
     <button class="scroller">Lyt her</button>
     <iframe src="https://orcd.co/eksil?fbclid=IwAR026QjVycUJoqXbAC_i2QhNQz61bmrWPWV3cKNdfNbaRZ1acKacXV2oZL4"></iframe>
+    <section class="ommig">
+      <h2 class="pelleommig">HVEM ER PELLE?</h2>
+      <img class="testimg" src="testimg.jpg" alt="Et billede af Pelle">
+      <p class="sampletext">Lorem Ipsum Sample Text. Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum</p>
+    </section>
+
+    <section class="contactsection">
+      <div class="contact">
+        <form action="/action_page.php">
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+          <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+          </select>
+
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+    </section>
   </div>
 
   <script src="jq.js"></script>
