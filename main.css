@@ -18,10 +18,139 @@ body {
     grid-auto-rows: minmax(100px, auto);
   }
 
+  #mobnav a{
+    font-family: 'Open Sans';
+    text-decoration: none;
+    font-size: 2vh;
+    color: white;
+    display: block;
+    padding: 10px 20px 10px 0px;
+  }
+
+  .logo{
+    display:none;
+  }
+
+  button {
+    display:none;
+  }
+
+  iframe {
+    grid-column: 4/5;
+    width: 0px;
+    opacity: 0;
+  }
+
+  .size{
+    grid-column: 1/4;
+    grid-row: 2;
+    background-color: green;
+  }
+
   video {
     grid-row: 2;
     grid-column: 1/5;
     width: 100%;
+    z-index: -2;
+    border: none;
+  }
+  
+  .logo {
+    height: 10%;
+    position: fixed;
+    top: 30vh;
+    padding-left: 3em;
+  }
+
+  .sidenav {
+    display:none;
+  }
+  
+  .scrolled a{
+    transition: 0.5s;
+    opacity: 1;
+  }
+
+  
+
+
+/* Burgermenu----------------------------------------------*/
+  #myNav .overlay-content .active{
+    color:rgb(197, 197, 197);
+  }
+
+  #mobnav{
+    grid-column: 1/5;
+    grid-row: 1;
+    margin-top:10px;
+    text-align: center;
+    margin-bottom: 80px;
+    position: sticky;
+    top:0;
+  }
+
+  #desknav{
+    display: none;
+  }
+
+  nav img{
+    width:100px;
+    float: left;
+  }
+
+  span{
+    float:right;
+    font-size: 50px;
+    margin-right:12px;
+    margin-top:6px;
+    z-index: 1;
+    position: sticky;
+  }
+   
+  span{
+    cursor:pointer;
+    color: white;
+  }
+
+  .overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+    z-index: 2;
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    color: white;
+    display: block;
+    transition: 0.3s;
+    font-size: 20px;
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+    color: #eca63;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 50px;
+    right: 25px;
   }
 }
 
