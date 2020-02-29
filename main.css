@@ -27,9 +27,9 @@ body {
 @media only screen and (min-width:720px) {
   #wrapper {
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat(12, 8%);
     grid-gap: 10px;
-    grid-template-rows: 100vh 90vh 100vh 100vh 100vh;
+    grid-template-rows: 100vh 50vh 50vh 100vh 100vh;
     border: 100px;
     border-color: red;
   }
@@ -45,11 +45,11 @@ body {
     font-family: 'Open Sans'
   }
 
-  iframe {
-    grid-column: 11/13;
-    width: 0px;
-    opacity: 0;
-  }
+.eksil{
+  width: 0px;
+  opacity: 0px;
+  grid-column: 11/13;
+}
 
   video {
     grid-row: 1;
@@ -166,7 +166,7 @@ body {
   .invert {
     filter: invert(100%);
     height: 24px;
-    padding: 0px 12px 0px 12px;
+    padding: 0px 12px 12px 20px;
   }
 
   .footer {
@@ -177,13 +177,16 @@ body {
 
   .navfooter {
     display: inline-block;
-    height: 20px;
     text-align: center;
-  }
 
+  }
+  .footercopyright{
+    margin: 10px 10px 0px 10px;
+  }
   ul {
     list-style-type: none;
     text-align: center;
+    margin: 0px;
   }
 
   li {
@@ -193,7 +196,19 @@ body {
     font-size: 14px;
     color: white;
   }
-
   a{
     text-decoration: none;
+  }
+
+  .instagramwidget{
+    grid-column: 4/10;
+    height: 100%;
+    text-align: center;
+  }
+  .instagramlogo{
+    filter: invert(100%);
+    width: 50%;
+  }
+  .lightwidget{
+    width: 100%;
   }
