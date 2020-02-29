@@ -1,10 +1,11 @@
 $(document).ready(function() {
   $("button").click(function() {
     $('.eksil').animate({
-      right: '250px',
+      right: '1px',
+      top: '100px',
       opacity: '1',
       height: '800px',
-      width: '300px'
+      width: '290px'
     });
   });
 });
@@ -16,9 +17,9 @@ $(document).ready(function() {
     //  $('nav').addClass('scrolled');
     //} else {
     //  $('nav').removeClass('scrolled');
-    }
-  });
-});
+  //  }
+  //});
+//});
 //$(document).ready(function() {
   //$(window).bind('scroll', function() {
     //var distance = 500;
@@ -27,6 +28,6 @@ $(document).ready(function() {
       //console.log("sutrøv")
     //} else {
     //  $('logo').removeClass('scrolled');
-    }
-  });
-});
+  //  }
+  //});
+//});
