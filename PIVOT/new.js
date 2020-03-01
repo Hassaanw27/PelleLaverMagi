@@ -10,6 +10,16 @@ $(document).ready(function() {
   });
 });
 
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+
+
+
 //$(document).ready(function() {
   //$(window).bind('scroll', function() {
     //var distance = 500;
