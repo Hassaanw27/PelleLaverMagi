@@ -12,20 +12,24 @@ body {
     grid-gap: 10px;
     grid-template-rows: 35vh 70vh auto auto auto 10vh;
   }
-  #mobnav{
-    display:none;
+
+  #mobnav {
+    display: none;
   }
-  .video{
-    grid-column: 2/13;
+
+  .video {
+    grid-column: 5/10;
     grid-row: 1/3;
-    object-fit: fill;
+    object-fit: contain;
     justify-self: center;
     align-self: center;
   }
-  .video iframe{
-    width: 1280px;
-    height: 720px;
+
+  .video iframe {
+    width: 1080px;
+    height: 620px;
   }
+
   .background {
     background-image: url("ommig.png");
     width: 100vw;
@@ -33,13 +37,13 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
   }
-  
+
   .logo {
     height: 10%;
     position: fixed;
     top: 30%;
   }
-  
+
   .sidenav {
     position: fixed;
     z-index: 1;
@@ -48,7 +52,7 @@ body {
     padding-left: 3em;
     padding-top: 2em;
   }
-  
+
   .sidenav a {
     font-family: 'Open Sans';
     text-decoration: none;
@@ -57,32 +61,32 @@ body {
     display: block;
     padding: 10px 20px 10px 0px;
   }
-  
+
   .sidenav a:hover {
     color: #064579;
     transition: 0.3s;
   }
-  
+
   .scrolled a {
     transition: 0.5s;
     opacity: 1;
   }
-  
+
   .scrolled img {
     transition: 0.5s;
     opacity: 1;
   }
-  
+
   .imgopacity {
     display: none;
   }
-  
+
   .invert {
     filter: invert(100%);
     height: 24px;
     padding: 48px 12px 12px 20px;
   }
-  
+
   .footer {
     width: 100%;
     text-align: center;
@@ -92,22 +96,22 @@ body {
     bottom: 0;
     background-color: rgba(0, 0, 214, 0.5);
   }
-  
+
   .navfooter {
     display: inline-block;
     text-align: center;
   }
-  
+
   .footercopyright {
     margin: 10px 10px 0px 10px;
   }
-  
+
   ul {
     list-style-type: none;
     text-align: center;
     margin: 0px;
   }
-  
+
   li {
     float: left;
     padding: 20px;
@@ -115,11 +119,11 @@ body {
     font-size: 14px;
     color: white;
   }
-  
+
   a {
     text-decoration: none;
   }
-  
+
   .bordertest {
     height: 100vh;
     width: 12.5vw;
@@ -128,7 +132,7 @@ body {
     background-color: rgb(0, 0, 214, 0.5);
     transition: 0.3s;
   }
-  
+
   .bordertest:hover {
     height: 100vh;
     width: 13.5vw;
@@ -136,7 +140,7 @@ body {
     opacity: 1;
     background-color: rgb(0, 0, 214);
   }
-  
+
   h2 {
     font-family: 'ParalucentW00-Heavy';
     font-size: 3.5em;
@@ -147,7 +151,7 @@ body {
     letter-spacing: 2px;
     margin: 0;
   }
-  
+
   p {
     color: white;
     grid-column: 3/7;
@@ -156,7 +160,7 @@ body {
     font-weight: 700;
     margin: 0;
   }
-  
+
   .timeline {
     grid-column: 3/13;
     grid-row: 3;
@@ -165,7 +169,7 @@ body {
     margin: 0;
     padding: 0;
   }
-  
+
   .timeline::after {
     content: '';
     position: absolute;
@@ -176,14 +180,14 @@ body {
     left: 50%;
     margin-left: -3px;
   }
-  
+
   .container {
     padding: 10px 40px;
     position: relative;
     background-color: inherit;
     width: 43%;
   }
-  
+
   .container::after {
     content: '';
     position: absolute;
@@ -196,11 +200,11 @@ body {
     border-radius: 50%;
     z-index: 1;
   }
-  
+
   .left {
     left: 0;
   }
-  
+
   .left::before {
     content: " ";
     height: 0;
@@ -213,7 +217,7 @@ body {
     border-width: 10px 0 10px 10px;
     border-color: transparent transparent transparent #808080;
   }
-  
+
   .content {
     padding: 20px 30px;
     background-color: #808080;
@@ -222,7 +226,7 @@ body {
     margin-right: 20px;
     margin-bottom: 20em;
   }
-  
+
   .timelinepics {
     text-align: center;
     grid-column: 7/13;
@@ -231,7 +235,7 @@ body {
     margin-left: -15em;
     justify-self: center;
   }
-  
+
   .timelinepics2 {
     text-align: center;
     grid-column: 7/13;
@@ -241,7 +245,7 @@ body {
     margin-top: 55vh;
     justify-self: center;
   }
-  
+
   .timelinepics3 {
     text-align: center;
     grid-column: 7/13;
@@ -251,7 +255,7 @@ body {
     margin-top: 105vh;
     justify-self: center;
   }
-  
+
   .timelinepics4 {
     text-align: center;
     grid-column: 7/13;
@@ -261,20 +265,20 @@ body {
     margin-top: 160vh;
     justify-self: center;
   }
-  
-  
+
   .eksil {
     width: 0px;
     opacity: 0px;
     position: inherit;
   }
-  .sidesticky{
+
+  .sidesticky {
     position: fixed;
     right: 0;
     top: 5%;
   }
-  
-  button{
+
+  button {
     color: white;
     background-color: rgb(0, 0, 214);
     border: none;
@@ -284,8 +288,8 @@ body {
     opacity: 0.6;
     transition: 0.3s;
   }
-  
-  button:hover{
+
+  button:hover {
     color: white;
     background-color: rgb(0, 0, 214);
     border: none;
@@ -296,8 +300,85 @@ body {
   }
 }
 
-@media screen and (max-width: 600px) {
+.udenu {
+  text-align: center;
+  padding: 20px;
+}
 
+.mySlides {
+  display: none
+}
+.slideshow-container {
+  grid-column: 4/11;
+  grid-row: 1/2;
+  align-self: center;
+  margin-top: 70%;
+  border: solid white;
+  height: 550px;
+  text-align: center;
+  background-color: rgba(0, 0, 214, 0.5)
+}
+
+.prev {
+  cursor: pointer;
+  color: grey;
+  font-size: 24px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: rgba(0, 0, 214, 0,5)
+}
+.prev:hover {
+  cursor: pointer;
+  color: white;
+  font-size: 24px;
+  border-radius: 0 3px 3px 0;
+  background-color: rgb(0, 0, 214);
+}
+.next {
+  cursor: pointer;
+  color: grey;
+  font-size: 24px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  margin-left: 120px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: rgba(0, 0, 214, 0,5)
+}
+.next:hover {
+  cursor: pointer;
+  color: white;
+  font-size: 24px;
+  border-radius: 0 3px 3px 0;
+  margin-left: 120px;
+  background-color: rgb(0, 0, 214);
+}
+.slideshowimg{
+  max-height: 402px;
+  max-width: 800px;
+}
+.prevnext{
+  margin-top: 24px;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+@media screen and (max-width: 600px) {
   #wrapper {
     display: grid;
     grid-gap: 10px;
@@ -305,7 +386,7 @@ body {
     grid-auto-rows: minmax(100px, auto);
   }
 
-  .video{
+  .video {
     grid-column: 1/6;
     grid-row: 2/3;
     object-fit: fill;
@@ -313,9 +394,9 @@ body {
     align-self: center;
   }
 
-  .video iframe{
-    width:560px;
-    height:315px;
+  .video iframe {
+    width: 560px;
+    height: 315px;
   }
 
   .background {
@@ -325,37 +406,37 @@ body {
     grid-column: 2/4;
     margin-top: -90px;
   }
-  
+
   .logo {
     height: 10%;
     position: fixed;
     top: 30%;
   }
-  
+
   .sidenav {
-    display:none;
+    display: none;
   }
-  
+
   .scrolled a {
     transition: 0.5s;
     opacity: 1;
   }
-  
+
   .scrolled img {
     transition: 0.5s;
     opacity: 1;
   }
-  
+
   .imgopacity {
     display: none;
   }
-  
+
   .invert {
     filter: invert(100%);
     height: 24px;
     padding: 48px 12px 12px 20px;
   }
-  
+
   .footer {
     width: 100%;
     text-align: center;
@@ -370,17 +451,17 @@ body {
     display: inline-block;
     text-align: center;
   }
-  
+
   .footercopyright {
     margin: 10px 10px 0px 10px;
   }
-  
+
   ul {
     list-style-type: none;
     text-align: center;
     margin: 0px;
   }
-  
+
   li {
     float: left;
     padding: 20px;
@@ -388,11 +469,11 @@ body {
     font-size: 14px;
     color: white;
   }
-  
+
   a {
     text-decoration: none;
   }
-  
+
   .bordertest {
     height: 100vh;
     width: 12.5vw;
@@ -401,7 +482,7 @@ body {
     background-color: rgb(0, 0, 214, 0.5);
     transition: 0.3s;
   }
-  
+
   .bordertest:hover {
     height: 100vh;
     width: 13.5vw;
@@ -409,7 +490,7 @@ body {
     opacity: 1;
     background-color: rgb(0, 0, 214);
   }
-  
+
   h2 {
     font-family: 'ParalucentW00-Heavy';
     font-size: 3.5em;
@@ -419,7 +500,7 @@ body {
     letter-spacing: 2px;
     margin: 0;
   }
-  
+
   p {
     color: white;
     grid-column: 2/5;
@@ -428,18 +509,18 @@ body {
     font-weight: 700;
     margin: 0;
   }
-  
+
   .timeline {
-    display:none;
+    display: none;
   }
-  
+
   .timelinepics {
     text-align: center;
     grid-column: 3;
     height: 40vh;
     grid-row: 5;
   }
-  
+
   .timelinepics2 {
     text-align: center;
     grid-column: 3;
@@ -447,7 +528,7 @@ body {
     grid-row: 6;
     justify-self: center;
   }
-  
+
   .timelinepics3 {
     text-align: center;
     grid-column: 3;
@@ -455,7 +536,7 @@ body {
     grid-row: 7;
     justify-self: center;
   }
-  
+
   .timelinepics4 {
     text-align: center;
     grid-column: 3;
@@ -463,18 +544,18 @@ body {
     grid-row: 8;
     justify-self: center;
   }
-  
-  
+
   .eksil {
     width: 0px;
     opacity: 0px;
     position: inherit;
   }
-  .sidesticky{
+
+  .sidesticky {
     display: none;
   }
-  
-  button{
+
+  button {
     color: white;
     background-color: rgb(0, 0, 214);
     border: none;
@@ -484,8 +565,8 @@ body {
     opacity: 0.6;
     transition: 0.3s;
   }
-  
-  button:hover{
+
+  button:hover {
     color: white;
     background-color: rgb(0, 0, 214);
     border: none;
@@ -495,94 +576,93 @@ body {
     opacity: 1;
   }
 
-  .bordertest{
+  .bordertest {
     display: none;
   }
- 
-
- 
 
   /* Burgermenu----------------------------------------------*/
-
-  #myNav .overlay-content .active{
-    color:rgb(197, 197, 197);
+  #myNav .overlay-content .active {
+    color: rgb(197, 197, 197);
   }
 
-  #mobnav{
+  #mobnav {
     grid-column: 1/6;
     grid-row: 1;
-    margin-top:10px;
+    margin-top: 10px;
     text-align: center;
     margin-bottom: 80px;
     position: sticky;
-    top:0;
+    top: 0;
   }
 
-  nav img{
-        width:100px;
-        float: left;
+  nav img {
+    width: 100px;
+    float: left;
   }
 
-  span{
-       float:right;
-        font-size: 50px;
-        margin-right:12px;
-        margin-top:6px;
-        z-index: 1;
-        position: sticky;
+  span {
+    float: right;
+    font-size: 50px;
+    margin-right: 12px;
+    margin-top: 6px;
+    z-index: 1;
+    position: sticky;
   }
 
-  span{
-      cursor:pointer;
-      color: #eca63f;
+  span {
+    cursor: pointer;
+    color: #eca63f;
   }
 
   .overlay {
-      height: 100%;
-      width: 0;
-      position: fixed;
-      z-index: 2;
-      top: 0;
-      left: 0;
-      background-color: rgb(0, 0, 0);
-      background-color: rgba(0, 0, 0, 0.9);
-      overflow-x: hidden;
-      transition: 0.5s;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
   }
-    
+
   .overlay-content {
-      position: relative;
-      top: 25%;
-      width: 100%;
-      text-align: center;
-      margin-top: 30px;
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
   }
-    
+
   .overlay a {
-      padding: 8px;
-      text-decoration: none;
-      color: #eca63f;
-      display: block;
-      transition: 0.3s;
+    padding: 8px;
+    text-decoration: none;
+    color: #eca63f;
+    display: block;
+    transition: 0.3s;
   }
-    
+
   .overlay a:hover, .overlay a:focus {
-      color: #ffffff;
+    color: #ffffff;
   }
-    
+
   .overlay .closebtn {
-      position: absolute;
-      top: 20px;
-      right: 45px;
-      font-size: 60px;
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .overlay a {font-size: 35px}
+  .overlay a {
+    font-size: 35px
+  }
+
   .overlay .closebtn {
-  font-size: 90px;
-  top: 15px;
-  right: 35px;
+    font-size: 90px;
+    top: 15px;
+    right: 35px;
   }
 }
