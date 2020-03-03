@@ -8,16 +8,18 @@
   <meta name="robots" content="noindex, nofollow">
   <meta name="robots" content="noindex, nofollow">
   <link rel="stylesheet" href="main.css" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://use.typekit.net/mei2tuy.css">
-  <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
   <title>PELLE</title>
 </head>
 
 <body>
   <section class="bordertest">
     <nav class="sidenav">
-      <a href="index.html"><img src="pelle.png" alt="PellesLogo" class="logo" id="logo"></a>
+      <a href="index.html"><img src="pelle.png" alt="PellesLogo" class="logo"></a>
       <a href="#Video">Video</a>
       <a href="galleri.html">Galleri</a>
       <a href="pelle.html">Pelle</a>
@@ -25,30 +27,34 @@
     </nav>
   </section>
   <div id="wrapper">
-      <nav id="mobnav">
-        <a href="index.html"><img src="pelle.png" alt="PellesLogo" class="logomob"></a>
-        <div id="myNav" class="overlay">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <div class="overlay-content">
-                <a href="index.html">Video</a>
-                <a href="galleri.html">Galleri</a>
-                <a href="pelle.html">Pelle</a>
-                <a href="contact.html">Kontakt</a>
-            </div>
-        </div>
-    <span id="open" onclick="openNav()">&#9776;</span>
-    </nav>
+    <nav id="mobnav">
+      <a href="index.html"><img src="pelle.png" alt="PellesLogo" class="logomob"></a>
+      <div id="myNav" class="overlay">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <div class="overlay-content">
+              <a href="index.html">Video</a>
+              <a href="galleri.html">Galleri</a>
+              <a href="pelle.html">Pelle</a>
+              <a href="contact.html">Kontakt</a>
+          </div>
+      </div>
+  <span id="open" onclick="openNav()">&#9776;</span>
+  </nav>
 
     <div class="sidesticky">
-      <button class="scroller"><p class="buttontekst">LYT NU</p> </button>
+      <button class="scroller">♪ Lyt til Eksil her ♪</button>
       <iframe src="https://orcd.co/eksil?fbclid=IwAR026QjVycUJoqXbAC_i2QhNQz61bmrWPWV3cKNdfNbaRZ1acKacXV2oZL4" class="eksil"></iframe>
     </div>
 
-    <section class="video">
-      <h2 class="udenu">EKSIL UDE NU</h2>
-        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-        </iframe>
+    <section id="videoSection">
+        <video autoplay="autoplay" muted loop id="myVideo">
+          <source src="Feedback_vid.mp4" type="video/mp4">
+          Your browser does not support HTML5 video.
+        </video>
+        <div id="mute" class="btn"></div>
+
     </section>
+
 
   </div>
   <section class="footer">
@@ -73,7 +79,10 @@
   </section>
 
   <script src="jq.js"></script>
-  <script src="new.js"></script>
+  <script src="index.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
+
 </body>
 
 </html>
