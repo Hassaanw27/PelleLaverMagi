@@ -62,24 +62,25 @@ function clickImage(imagem, index) {
   });
 }
 
-//$(document).ready(function() {
-//$(window).bind('scroll', function() {
-//var distance = 500;
-//if ($(window).scrollTop() > distance) {
-//  $('nav').addClass('scrolled');
-//} else {
-//  $('nav').removeClass('scrolled');
-//  }
-//});
-//});
-//$(document).ready(function() {
-//$(window).bind('scroll', function() {
-//var distance = 500;
-//if ($(window).scrollTop() > distance) {
-//$('logo').addClass('scrolled');
-//console.log("sutrøv")
-//} else {
-//  $('logo').removeClass('scrolled');
-//  }
-//});
-//});
+$(document).ready(function() {
+  $(window).bind('scroll', function() {
+    var distance = 200;
+    if ($(window).scrollTop() > distance) {
+      $('a.prev').addClass('scrolled');
+      console.log("sutrøv")
+    } else {
+      $('a.prev').removeClass('scrolled');
+    }
+  });
+});
+$(document).ready(function() {
+  $(window).bind('scroll', function() {
+    var distance = 200;
+    if ($(window).scrollTop() > distance) {
+      $('a.next').addClass('scrolled');
+      console.log("sutrøv")
+    } else {
+      $('a.next').removeClass('scrolled');
+    }
+  });
+});
